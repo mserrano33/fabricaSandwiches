@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace fabricaSanwiches.BD.Data
+namespace fabricaSandwiches.BD.Data
 {
-    internal class dbcontext
+    public class dbcontext
     {
     }
 }

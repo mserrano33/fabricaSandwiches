@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace fabricaSandwiches.BD.Data
+namespace fabricaSandwiches.BD.Data.Entidades
 {
-    public class EntityBase
+    public class Cliente
     {
     }
 }

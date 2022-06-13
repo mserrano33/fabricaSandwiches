@@ -1,4 +1,6 @@
+using fabricaSandwiches.BD.Data;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+var app = builder.Configuration.GetConnectionString("conn");
+builder.Services.AddDbContext<dbcontext>(opciones =>
+    opciones.UseSqlServer(conn));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
